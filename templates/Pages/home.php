@@ -36,8 +36,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->Html->meta('icon') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
-    <?= $this->Html->css(['normalize.min', 'bootstrap.min.css', 'cake', 'home']) ?>
+    <?= $this->Html->css(['normalize.min', 'bootstrap.min.css']) ?>
 
     <?= $this->Html->script(['bootstrap.bundle.min.js']) ?>
 
@@ -46,16 +47,14 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <header>
-        <div class="container text-center">
-            <a href="https://cakephp.org/" target="_blank" rel="noopener">
-                <img alt="CakePHP" src="https://cakephp.org/v2/img/logos/CakePHP_Logo.svg" width="350" />
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="<?= $this->Url->build('/') ?>">
+                <i class="bi-cloud"></i>
+                eSalon Weather
             </a>
-            <h1>
-                Welcome to CakePHP <?php echo Configure::version() ?> Strawberry (🍓)
-            </h1>
         </div>
-    </header>
+    </nav>
     <main class="main">
         <div class="container">
             <div class="content">
