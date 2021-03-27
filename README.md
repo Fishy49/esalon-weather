@@ -23,6 +23,6 @@ CREATE TABLE `geocodes` (
 
 ## Check the weather
 
-Simple punch in your IP address and watch the magic.
+Simply punch in your IP address and watch the magic.
 
 _Completed in 5 hours_
