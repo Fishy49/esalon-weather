@@ -4,7 +4,7 @@ You hair is important. Please check the weather.
 
 ## Setup
 
-1. Create the table in a MySQL DB named `esalon_weather` like so:
+1. Create the `geocodes` table in a MySQL DB named `esalon_weather` like so:
 ```
 CREATE TABLE `geocodes` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -23,6 +23,6 @@ CREATE TABLE `geocodes` (
 
 ## Check the weather
 
-Simply punch in your IP address and watch the magic.
+Simply punch in your IP address in the form provided and watch the magic.
 
 _Completed in 5 hours_
